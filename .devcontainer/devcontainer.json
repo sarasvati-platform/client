@@ -1,0 +1,10 @@
+{
+  "name": "Sarasvati Client",
+  "dockerFile": "Dockerfile",
+  "workspaceFolder": "/sarasvati/client",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/sarasvati/client,type=bind,consistency=cached",
+  "settings": {
+    "githubIssues.issueBranchTitle": "${user}/issue${issueNumber}"
+  },
+  "postCreateCommand": ".devcontainer/bootstrap.sh",
+}
